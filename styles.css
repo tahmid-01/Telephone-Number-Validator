@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.validator-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+#user-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#user-input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    flex: 1;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#check-btn {
+    background: #667eea;
+    color: white;
+}
+
+#clear-btn {
+    background: #f0f0f0;
+    color: #333;
+}
+
+#results-div {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    min-height: 60px;
+    word-break: break-all;
+}
+
+#results-div:not(:empty) {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+}
+
+.examples {
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.examples h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.examples ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.examples li {
+    color: #555;
+    padding: 0.5rem;
+    font-family: monospace;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .button-group {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .validator-card {
+        padding: 1.5rem;
+    }
+} 
