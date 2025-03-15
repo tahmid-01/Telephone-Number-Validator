@@ -1,6 +1,6 @@
 # US Telephone Number Validator
 
-A simple tool to validate US telephone numbers according to standard formats.
+A simple tool to validate US telephone numbers using HTML, CSS, and JavaScript.
 
 ## 🚀 Features
 - Validates US phone numbers in various formats.
@@ -17,35 +17,25 @@ A simple tool to validate US telephone numbers according to standard formats.
    ```bash
    git clone https://github.com/tahmid-01/Telephone-Number-Validator.git
    ```
-2. Navigate into the project folder:
-   ```bash
-   cd Telephone-Number-Validator
-   ```
-3. Install dependencies (if required):
-   ```bash
-   npm install
-   ```
+2. Open the `index.html` file in your browser.
 
 ## ⚙️ Usage
-1. Run the validator:
-   ```bash
-   node validator.js
-   ```
-2. Enter a phone number when prompted.
+1. Enter a phone number in the input field.
+2. Click the "Validate" button.
 3. The validator will display whether the number is valid or not.
 
-Alternatively, you can integrate the validator into a web app or other projects.
-
 ## 📖 Example
-```javascript
-const isValidNumber = validateUSPhoneNumber("(555) 555-5555");
-console.log(isValidNumber); // true
+```html
+<input type="text" id="phoneNumber" placeholder="Enter US phone number">
+<button onclick="validatePhoneNumber()">Validate</button>
+<div id="result"></div>
 ```
-
-## 🧪 Testing
-Run the test suite to ensure everything is working correctly:
-```bash
-npm test
+```javascript
+function validatePhoneNumber() {
+  const number = document.getElementById('phoneNumber').value;
+  const isValid = /^\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(number);
+  document.getElementById('result').textContent = isValid ? 'Valid' : 'Invalid';
+}
 ```
 
 ## 📋 Contributing
