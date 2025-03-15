@@ -46,7 +46,7 @@ This project is licensed under the MIT License.
 
 ## 📬 Contact
 - GitHub: [tahmid-01](https://github.com/tahmid-01)
-- Email: [your.email@example.com](mailto:your.email@example.com)
+- Email: [tahmidhossain548@gmail.com](mailto:tahmidhossain548@gmail.com)
 
 ---
 Made with ❤️ by Tahmid
